@@ -1,0 +1,75 @@
+---
+const { t } = Astro.locals;
+---
+
+<div class="py-38">
+  <div class="flex flex-col items-center mx-auto max-w-7xl gap-y-30">
+    <div class="flex flex-col gap-12 items-center mx-auto max-w-145">
+      <h2 class="text-5xl font-bold text-center">
+        <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
+          {t("levels.heading")}
+        </span>
+      </h2>
+
+      <p class="text-2xl font-bold text-center">
+        {t("levels.subtitle")}
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-12 items-center">
+      <p class="font-serif text-xl font-bold">{t("levels.seniority")}</p>
+
+      <div class="flex flex-wrap gap-12 justify-center">
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-blue">
+          {t("levels.junior")}
+        </div>
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-green">
+          {t("levels.mid")}
+        </div>
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-red">
+          {t("levels.expert")}
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-12 items-center">
+      <p class="font-serif text-xl font-bold">{t("levels.roles")}</p>
+
+      <div class="flex flex-wrap gap-12 justify-center max-w-3xl">
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.frontend")}
+        </div>
+
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.backend")}
+        </div>
+
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.fullstack")}
+        </div>
+
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.qa")}
+        </div>
+        
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.devops")}
+        </div>
+
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.cloud")}
+        </div>
+
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.support")}
+        </div>
+
+        <div class="flex justify-center items-center h-10 font-serif font-bold w-50 border-3 border-yellow">
+          {t("levels.sysadmin")}
+        </div>
+      </div>
+    </div>
+
+    <p class="font-serif text-2xl italic font-normal text-center">{t("levels.ready")}</p>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import { Font } from "astro:assets";
+const { locale, t } = Astro.locals;
+---
+
+<html lang={locale} class="antialiased">
+  <head>
+    <Font cssVariable="--font-heebo" preload />
+    <Font cssVariable="--font-arimo" preload />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{t("site.title")}</title>
+  </head>
+
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>

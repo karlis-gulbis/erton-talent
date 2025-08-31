@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Coverage
+coverage/
+
+# Cache
+.eslintcache
+.parcel-cache
+.turbo/
+
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/

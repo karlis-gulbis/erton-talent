@@ -1,0 +1,45 @@
+---
+import SwFlag from "../assets/svgs/sw-flag.svg";
+import Profile from "../assets/svgs/profile.svg";
+import Key from "../assets/svgs/key.svg";
+const { t } = Astro.locals;
+---
+
+<div class="py-55 bg-gray">
+  <div class="flex justify-center px-4 mx-auto max-w-7xl gap-25">
+    <h2 class="text-5xl font-bold text-center">
+      <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
+        {t("leaders.heading")}
+      </span>
+    </h2>
+
+    <div class="flex flex-col gap-y-17.5">
+      <div class="flex gap-10 items-center">
+        <SwFlag class="size-22.5" />
+
+        <div class="space-y-3 max-w-105">
+          <p class="font-serif text-xl font-bold">{t("leaders.pmTitle")}</p>
+          <p class="font-serif italic">{t("leaders.pmDesc")}</p>
+        </div>
+      </div>
+
+      <div class="flex gap-10 items-center">
+        <Key class="size-22.5" />
+
+        <div class="space-y-3 max-w-105">
+          <p class="font-serif text-xl font-bold">{t("leaders.kamTitle")}</p>
+          <p class="font-serif italic">{t("leaders.kamDesc")}</p>
+        </div>
+      </div>
+
+      <div class="flex gap-10 items-center">
+        <Profile class="size-22.5" />
+
+        <div class="space-y-3 max-w-105">
+          <p class="font-serif text-xl font-bold">{t("leaders.seniorTitle")}</p>
+          <p class="font-serif italic">{t("leaders.seniorDesc")}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

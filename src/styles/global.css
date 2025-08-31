@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-dark: hsl(0, 0%, 15%);
+  --color-yellow: hsl(42, 100%, 50%);
+  --color-blue: hsl(187, 100%, 45%);
+  --color-green: hsl(98, 46%, 46%);
+  --color-red: hsl(18, 98%, 50%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray: hsl(0, 0%, 95%);
+
+  --font-sans: var(--font-heebo);
+  --font-serif: var(--font-arimo);
+}
+
+.line-box {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

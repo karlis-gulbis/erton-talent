@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+
+import BoltLogo from "../assets/bolt-logo.png";
+import PostnordLogo from "../assets/postnord-logo.png";
+import SkanskaLogo from "../assets/skanska-logo.png";
+import InconLogo from "../assets/incon-logo.png";
+const { t } = Astro.locals;
+---
+
+<div class="py-38 bg-gray">
+  <div class="flex flex-col mx-auto max-w-7xl gap-y-30">
+    <div class="flex flex-col gap-12 items-center mx-auto max-w-145">
+      <h2 class="text-5xl font-bold text-center">
+        <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
+          {t("success.heading")}
+        </span>
+      </h2>
+    </div>
+
+    <div
+      class="grid grid-cols-[repeat(2,minmax(0,400px))] gap-x-10 gap-y-30 justify-between max-w-5xl mx-auto w-full"
+    >
+      <div class="flex flex-col gap-y-12 items-center">
+        <Image src={BoltLogo} alt="Bolt" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
+
+        <div class="flex flex-col gap-y-4">
+          <p class="font-serif text-xl font-bold text-center">{t("success.bolt.name")}</p>
+          <p class="font-serif text-center">{t("success.bolt.quote")}</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-12 items-center">
+        <Image src={PostnordLogo} alt="PostNord" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
+
+        <div class="flex flex-col gap-y-4">
+          <p class="font-serif text-xl font-bold text-center">{t("success.postnord.name")}</p>
+          <p class="font-serif text-center">{t("success.postnord.quote")}</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-12 items-center">
+        <Image src={SkanskaLogo} alt="Skanska" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
+
+        <div class="flex flex-col gap-y-4">
+          <p class="font-serif text-xl font-bold text-center">{t("success.skanska.name")}</p>
+          <p class="font-serif text-center">{t("success.skanska.quote")}</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-12 items-center">
+        <Image src={InconLogo} alt="Incon" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
+
+        <div class="flex flex-col gap-y-4">
+          <p class="font-serif text-xl font-bold text-center">{t("success.incon.name")}</p>
+          <p class="font-serif text-center">{t("success.incon.quote")}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
