@@ -4,21 +4,23 @@ const { t } = Astro.locals;
 ---
 
 <div class="flex flex-col gap-y-12 items-center px-4 py-38 relative overflow-hidden" data-hero="true">
-  <SquareSvg class="hero-square text-blue absolute top-10 left-15 size-6 md:hidden" data-speed="1.5" />
-  <SquareSvg class="hero-square text-yellow absolute right-25 top-20 size-9 md:hidden" data-speed="2.5" />
-  <SquareSvg class="hero-square text-red absolute bottom-25 left-8 size-10 md:hidden" data-speed="3.0" />
-  <SquareSvg class="hero-square text-green absolute bottom-20 right-11 size-9 md:hidden" data-speed="4.0" />
+  <div class="max-w-5xl mx-auto size-full absolute top-0 left-1/2 -translate-x-1/2 -z-1">
+    <SquareSvg class="hero-square text-blue absolute top-10 left-15 size-6" data-speed="1.5" />
+    <SquareSvg class="hero-square text-yellow absolute right-25 top-20 size-9" data-speed="2.5" />
+    <SquareSvg class="hero-square text-red absolute bottom-25 left-8 size-10" data-speed="3.0" />
+    <SquareSvg class="hero-square text-green absolute bottom-20 right-11 size-9" data-speed="4.0" />
+  </div>
 
   <div class="flex flex-col gap-y-8 items-center max-w-7xl relative z-10">
-    <h1 class="text-5xl font-bold text-center max-w-105">
-      <span class="inline px-4 leading-[normal] text-white bg-dark line-box">{t("hero.title")}</span>
+    <h1 class="text-[38px] md:text-5xl font-bold text-center max-w-100 md:max-w-105 leading-[normal]">
+      <span class="inline px-4 text-white bg-dark line-box">{t("hero.title")}</span>
     </h1>
 
-    <p class="text-2xl font-bold text-center max-w-150">
+    <p class="text-2xl font-bold text-center max-w-100 md:max-w-150">
       {t("hero.subtitle")}
     </p>
 
-    <p class="font-serif text-center max-w-150">
+    <p class="font-serif text-center max-w-100 md:max-w-150">
       {t("hero.description")}
     </p>
   </div>
@@ -37,7 +39,7 @@ const { t } = Astro.locals;
     if (!prefersMotion) return;
 
     ScrollTrigger.matchMedia({
-      "(max-width: 767px)": function () {
+      "all": function () {
         const hero = document.querySelector<HTMLElement>("[data-hero=\"true\"]");
         if (!hero) return;
 

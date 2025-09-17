@@ -1,25 +1,25 @@
 ---
-import Shield from '../assets/shield.svg';
-import Schedule from '../assets/schedule.svg';
-import Settings from '../assets/settings.svg';
-import Globe from '../assets/globe.svg';
+import Shield from "../assets/shield.svg";
+import Schedule from "../assets/schedule.svg";
+import Settings from "../assets/settings.svg";
+import Globe from "../assets/globe.svg";
 const { t } = Astro.locals;
 ---
 
-<div class="py-38">
+<div class="py-29 md:py-38">
   <div class="flex flex-col mx-auto max-w-7xl gap-y-25">
-    <div class="flex flex-col gap-12 items-center mx-auto max-w-145">
-      <h2 class="text-5xl font-bold text-center">
+    <div class="flex flex-col gap-y-8 md:gap-12 items-center mx-auto md:max-w-145">
+      <h2 class="text-[38px] md:text-5xl font-bold text-center leading-[normal] max-md:max-w-100">
         <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
           {t("why.heading")}
         </span>
       </h2>
 
-      <p class="text-2xl font-bold text-center">{t("why.subtitle")}</p>
+      <p class="text-2xl font-bold text-center max-w-100">{t("why.subtitle")}</p>
     </div>
 
     <div
-      class="grid grid-cols-[repeat(2,minmax(0,400px))] gap-x-10 gap-y-30 justify-between max-w-5xl mx-auto w-full"
+      class="grid md:grid-cols-[repeat(2,minmax(0,400px))] gap-x-10 gap-y-12 md:gap-y-30 justify-between max-w-5xl mx-auto w-full px-4"
     >
       <div class="flex flex-col gap-y-12 items-center">
         <!-- IMAGE -->
@@ -27,7 +27,9 @@ const { t } = Astro.locals;
 
         <!-- TEXT -->
         <div class="flex flex-col gap-y-4">
-          <p class="font-serif text-xl font-bold text-center">{t("why.card1.title")}</p>
+          <p class="font-serif text-xl font-bold text-center">
+            {t("why.card1.title")}
+          </p>
           <p class="font-serif text-center">{t("why.card1.desc")}</p>
         </div>
       </div>
@@ -38,7 +40,9 @@ const { t } = Astro.locals;
 
         <!-- TEXT -->
         <div class="flex flex-col gap-y-4">
-          <p class="font-serif text-xl font-bold text-center">{t("why.card2.title")}</p>
+          <p class="font-serif text-xl font-bold text-center">
+            {t("why.card2.title")}
+          </p>
           <p class="font-serif text-center">{t("why.card2.desc")}</p>
         </div>
       </div>
@@ -49,7 +53,9 @@ const { t } = Astro.locals;
 
         <!-- TEXT -->
         <div class="flex flex-col gap-y-4">
-          <p class="font-serif text-xl font-bold text-center">{t("why.card3.title")}</p>
+          <p class="font-serif text-xl font-bold text-center">
+            {t("why.card3.title")}
+          </p>
           <p class="font-serif text-center">{t("why.card3.desc")}</p>
         </div>
       </div>
@@ -60,7 +66,9 @@ const { t } = Astro.locals;
 
         <!-- TEXT -->
         <div class="flex flex-col gap-y-4">
-          <p class="font-serif text-xl font-bold text-center">{t("why.card4.title")}</p>
+          <p class="font-serif text-xl font-bold text-center">
+            {t("why.card4.title")}
+          </p>
           <p class="font-serif text-center">{t("why.card4.desc")}</p>
         </div>
       </div>
