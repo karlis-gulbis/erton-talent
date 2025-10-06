@@ -79,7 +79,7 @@ const en = {
   "success.incon.name": "Andreas Hammerin (Incon AB)",
   "success.incon.quote": "“Thanks to Erton Services, we found an IT expert who exceeded our expectations.”",
 
-  "why.heading": "Why Latvian Developers? Why Us?",
+  "why.heading": "Why Latvian Developers?<br>Why Us?",
   "why.subtitle": "Scandinavian Standards. Baltic Efficiency.",
   "why.card1.title": "Skilled & Experienced",
   "why.card1.desc": "All candidates are mid to senior level, ready to contribute from day one.",

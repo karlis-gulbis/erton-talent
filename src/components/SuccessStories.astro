@@ -5,11 +5,18 @@ import BoltLogo from "../assets/bolt-logo.png";
 import PostnordLogo from "../assets/postnord-logo.png";
 import SkanskaLogo from "../assets/skanska-logo.png";
 import InconLogo from "../assets/incon-logo.png";
+import QuotesGreenSvg from "../assets/svgs/quotes-green.svg";
+import QuotesBlueSvg from "../assets/svgs/quotes-blue.svg";
+import QuotesYellowSvg from "../assets/svgs/quotes-yellow.svg";
 const { t } = Astro.locals;
 ---
 
-<div class="py-29 md:py-38 bg-gray">
-  <div class="flex flex-col mx-auto max-w-7xl gap-y-30">
+<div class="py-29 md:py-38 bg-gray relative">
+  <QuotesGreenSvg class="absolute top-7 right-12 z-0 md:hidden" />
+  <QuotesYellowSvg class="absolute top-[58%] left-8 z-0 md:hidden" />
+  <QuotesBlueSvg class="absolute bottom-10 right-20 z-0 md:hidden" />
+
+  <div class="flex flex-col mx-auto max-w-7xl gap-y-30 z-1 relative">
     <div class="flex flex-col gap-y-8 md:gap-12 items-center mx-auto md:max-w-145">
       <h2 class="text-[38px] md:text-5xl font-bold text-center leading-[normal] max-md:max-w-100">
         <span class="inline px-4 text-white bg-dark line-box">
@@ -21,7 +28,7 @@ const { t } = Astro.locals;
     <div
       class="grid md:grid-cols-[repeat(2,minmax(0,400px))] gap-x-10 gap-y-25 md:gap-y-30 justify-between max-w-5xl mx-auto w-full px-4"
     >
-      <div class="flex flex-col gap-y-12 items-center">
+      <div class="flex flex-col gap-y-6 md:gap-y-12 items-center">
         <Image src={BoltLogo} alt="Bolt" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
 
         <div class="flex flex-col gap-y-4">
@@ -30,7 +37,7 @@ const { t } = Astro.locals;
         </div>
       </div>
 
-      <div class="flex flex-col gap-y-12 items-center">
+      <div class="flex flex-col gap-y-6 md:gap-y-12 items-center">
         <Image src={PostnordLogo} alt="PostNord" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
 
         <div class="flex flex-col gap-y-4">
@@ -39,7 +46,7 @@ const { t } = Astro.locals;
         </div>
       </div>
 
-      <div class="flex flex-col gap-y-12 items-center">
+      <div class="flex flex-col gap-y-6 md:gap-y-12 items-center">
         <Image src={SkanskaLogo} alt="Skanska" class="aspect-250/150 md:max-w-[250px] max-h-[150px] object-contain" />
 
         <div class="flex flex-col gap-y-4">
@@ -48,7 +55,7 @@ const { t } = Astro.locals;
         </div>
       </div>
 
-      <div class="flex flex-col gap-y-12 items-center">
+      <div class="flex flex-col gap-y-6 md:gap-y-12 items-center">
         <Image src={InconLogo} alt="Incon" class="aspect-250/150 max-w-[250px] max-h-[150px] object-contain" />
 
         <div class="flex flex-col gap-y-4">

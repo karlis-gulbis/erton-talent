@@ -56,10 +56,10 @@ const props = defineProps<{
 
 <template>
   <form 
-    class="space-y-8 w-full max-w-175" 
+    class="space-y-6 md:space-y-8 w-full max-w-175" 
     @submit="handleSubmit"
   >
-    <div class="flex gap-8 w-full">
+    <div class="flex max-md:flex-col max-md:gap-y-6 md:gap-8 w-full">
       <input
         type="text"
         name="name"
@@ -96,14 +96,14 @@ const props = defineProps<{
       :disabled="isLoading || isSuccess"
       :placeholder="props.messagePlaceholder ?? 'Message'"
       v-model="state.message"
-      class="px-4 py-3 mb-12 w-full font-serif bg-white rounded-lg border resize-none border-black/50 placeholder:text-black/50 focus:outline-dark disabled:opacity-60"
+      class="px-4 py-3 md:mb-12 w-full font-serif bg-white rounded-lg border resize-none border-black/50 placeholder:text-black/50 focus:outline-dark disabled:opacity-60"
       rows="5"></textarea>
 
     <button
       :disabled="isLoading"
       v-if="!isSuccess"
       type="submit"
-      class="float-right px-6 h-10 font-bold uppercase rounded bg-yellow disabled:opacity-60"
+      class="float-right px-6 h-10 font-bold uppercase rounded bg-yellow disabled:opacity-60 min-w-40"
     >
       {{ isLoading ? (props.sendingLabel ?? "Sending...") : (props.sendLabel ?? "Send") }}
     </button>

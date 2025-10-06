@@ -2,11 +2,11 @@
 const { t } = Astro.locals;
 ---
 
-<div class="py-38 bg-gray">
-  <div class="flex flex-col items-center mx-auto max-w-7xl gap-y-30">
-    <div class="flex flex-col gap-12 items-center mx-auto max-w-145">
-      <h2 class="text-5xl font-bold text-center">
-        <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
+<div class="py-29 md:py-38 bg-gray">
+  <div class="flex flex-col items-center mx-auto max-w-7xl gap-y-25 md:gap-y-30 max-md:px-4">
+    <div class="flex flex-col gap-y-8 md:gap-y-12 items-center mx-auto max-w-145">
+      <h2 class="text-[38px] md:text-5xl font-bold text-center leading-[normal] max-md:max-w-100">
+        <span class="inline px-4 text-white bg-dark line-box">
           {t("how.heading")}
         </span>
       </h2>
@@ -14,55 +14,47 @@ const { t } = Astro.locals;
       <p class="text-2xl font-bold text-center">{t("how.subtitle")}</p>
     </div>
 
-    <div class="flex items-center gap-x-8">
-      <div
-        class="size-24 aspect-square bg-blue rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white"
-      >
+    <div class="flex max-md:flex-col items-center max-md:gap-y-8 gap-x-8">
+      <div class="size-24 aspect-square bg-blue rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white">
         1
       </div>
 
-      <div class="max-w-125">
+      <div class="max-w-125 max-md:text-center max-md:space-y-4">
         <p class="text-xl font-bold font-serif">{t("how.step1.title")}</p>
-        <p class="font-serif">{t("how.step1.desc")}</p>
+        <p class="font-serif leading-[110%]">{t("how.step1.desc")}</p>
       </div>
     </div>
 
-    <div class="flex items-center gap-x-8 self-end">
-      <div
-        class="size-24 aspect-square bg-green rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white"
-      >
+    <div class="flex max-md:flex-col items-center max-md:gap-y-8 gap-x-8 md:self-end">
+      <div class="size-24 aspect-square bg-green rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white">
         2
       </div>
 
-      <div class="max-w-125">
+      <div class="max-w-125 max-md:text-center max-md:space-y-4">
         <p class="text-xl font-bold font-serif">{t("how.step2.title")}</p>
-        <p class="font-serif">{t("how.step2.desc")}</p>
+        <p class="font-serif leading-[110%]">{t("how.step2.desc")}</p>
       </div>
     </div>
 
-    <div class="flex items-center gap-x-8 self-start pl-30">
-      <div
-        class="size-24 aspect-square bg-yellow rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white"
-      >
+    <div class="flex max-md:flex-col items-center max-md:gap-y-8 gap-x-8 md:self-start md:pl-30">
+      <div class="size-24 aspect-square bg-yellow rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white">
         3
       </div>
 
-      <div class="max-w-125">
+      <div class="max-w-125 max-md:text-center max-md:space-y-4">
         <p class="text-xl font-bold font-serif">{t("how.step3.title")}</p>
-        <p class="font-serif">{t("how.step3.desc")}</p>
+        <p class="font-serif leading-[110%]">{t("how.step3.desc")}</p>
       </div>
     </div>
 
-    <div class="flex items-center gap-x-8 self-end pr-30">
-      <div
-        class="size-24 aspect-square bg-red rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white"
-      >
+    <div class="flex max-md:flex-col items-center max-md:gap-y-8 gap-x-8 md:self-end md:pr-30">
+      <div class="size-24 aspect-square bg-red rounded-full flex items-center justify-center text-6xl font-serif font-bold text-white">
         4
       </div>
 
-      <div class="max-w-125">
+      <div class="max-w-125 max-md:text-center max-md:space-y-4">
         <p class="text-xl font-bold font-serif">{t("how.step4.title")}</p>
-        <p class="font-serif">{t("how.step4.desc")}</p>
+        <p class="font-serif leading-[110%]">{t("how.step4.desc")}</p>
       </div>
     </div>
   </div>

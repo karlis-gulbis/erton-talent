@@ -3,29 +3,34 @@ import Speech from "../assets/speech.svg";
 const { t } = Astro.locals;
 ---
 
-<div class="py-38">
-  <div class="flex flex-col items-center mx-auto max-w-7xl gap-y-30">
+<div class="py-25 pb-32 md:py-38">
+  <div
+    class="flex flex-col items-center mx-auto max-w-7xl gap-y-12 md:gap-y-30 max-md:px-4"
+  >
     <div class="flex flex-col gap-12 items-center mx-auto max-w-145">
-      <h2 class="text-5xl font-bold text-center">
-        <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
+      <h2 class="text-[38px] md:text-5xl font-bold text-center leading-[normal] max-md:max-w-100">
+        <span class="inline px-4 text-white bg-dark line-box">
           {t("ceo.heading")}
         </span>
       </h2>
     </div>
 
     <!-- Video -->
-    <div class="w-full max-w-4xl aspect-video bg-gray">{t("ceo.videoPlaceholder")}</div>
+    <div class="w-full max-w-4xl aspect-video bg-gray">
+      {t("ceo.videoPlaceholder")}
+    </div>
 
     <!-- Book consultation -->
     <div class="flex flex-col gap-y-12 mx-auto max-w-165">
-      <div class="flex gap-6 items-center">
+      <div class="flex max-md:flex-col gap-8 md:gap-6 items-center">
         <!-- Icon -->
         <Speech />
 
-        <div class="space-y-2">
-          <p class="text-5xl font-bold">{t("ceo.book")}</p>
-          <p class="font-serif text-2xl font-bold">
-            {t("ceo.orDirect")} <a href="mailto:erton@erton.se" class="underline text-yellow">erton@erton.se</a>
+        <div class="space-y-4 md:space-y-2 max-md:text-center">
+          <p class="text-2xl md:text-5xl font-bold">{t("ceo.book")}</p>
+          <p class="font-serif text-base md:text-2xl font-bold">
+            {t("ceo.orDirect")}
+            <a href="mailto:erton@erton.se" class="underline text-yellow max-md:block">erton@erton.se</a>
           </p>
         </div>
       </div>

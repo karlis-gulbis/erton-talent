@@ -5,11 +5,11 @@ import FormContactUs from "./FormContactUs.vue";
 const { t } = Astro.locals;
 ---
 
-<div class="py-38 bg-gray">
-  <div class="flex flex-col items-center mx-auto max-w-7xl gap-y-25">
+<div class="py-28 md:py-38 bg-gray max-md:px-4">
+  <div class="flex flex-col items-center mx-auto max-w-7xl gap-y-20 md:gap-y-25">
     <div class="flex flex-col gap-12 items-center mx-auto max-w-145">
-      <h2 class="text-5xl font-bold text-center">
-        <span class="inline px-4 leading-[normal] text-white bg-dark line-box">
+      <h2 class="text-[38px] md:text-5xl font-bold text-center leading-[normal] max-md:max-w-100">
+        <span class="inline px-4 text-white bg-dark line-box">
           {t("contact.heading")}
         </span>
       </h2>
@@ -28,10 +28,8 @@ const { t } = Astro.locals;
       error-text={t("form.error")}
     />
 
-    <div class="flex gap-6 w-full max-w-175">
-      <div
-        class="flex flex-1 gap-5 items-center p-5 lex border-3 border-green h-25"
-      >
+    <div class="flex max-md:flex-col max-md:items-center max-md:gap-8 md:gap-6 w-full max-w-175">
+      <div class="flex flex-1 gap-5 items-center p-5 border-3 border-blue h-25 max-md:max-w-82 max-md:w-full">
         <Phone class="size-15 aspect-square" />
 
         <div class="space-y-1">
@@ -40,7 +38,7 @@ const { t } = Astro.locals;
         </div>
       </div>
 
-      <div class="flex flex-1 gap-5 items-center p-5 border-3 border-blue h-25">
+      <div class="flex flex-1 gap-5 items-center p-5 border-3 border-green h-25 max-md:max-w-82 max-md:w-full">
         <Email class="size-15 aspect-square" />
 
         <div class="space-y-1">
