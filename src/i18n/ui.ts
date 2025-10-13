@@ -37,8 +37,6 @@ const en = {
   "success.incon.name": "Andreas Hammerin (Incon AB)",
   "success.incon.quote": "“Thanks to Erton Services, we found an IT expert who exceeded our expectations.”",
 
-  "ceo.heading": "Meet our CEO",
-  "ceo.videoPlaceholder": "VIDEO",
   "ceo.book": "Book a Free Consultation",
   "ceo.orDirect": "Or contact us directly:",
   "ceo.cta": "Contact us",
@@ -78,10 +76,6 @@ const en = {
   "leaders.kamDesc": "To help manage and grow your most important client relationships.",
   "leaders.seniorTitle": "Senior Manager",
   "leaders.seniorDesc": "With over 10 years of experience leading teams in Germany and the UK.",
-
-  "team.heading": "Meet Our Team",
-  "team.subtitle": "We’re here to help — experienced, responsive, and ready to support your goals.",
-  "team.roleCEO": "CEO",
 
   "contact.heading": "Contact Us",
   "contact.phoneLabel": "Phone:",
@@ -132,8 +126,6 @@ const da = {
   "success.incon.name": "Andreas Hammerin (Incon AB)",
   "success.incon.quote": "“Thanks to Erton Services, we found an IT expert who exceeded our expectations.”",
 
-  "ceo.heading": "Mød vores administrerende direktør",
-  "ceo.videoPlaceholder": "VIDEO",
   "ceo.book": "Book en gratis konsultation",
   "ceo.orDirect": "Eller kontakt os direkte:",
   "ceo.cta": "Kontakt os",
@@ -173,10 +165,6 @@ const da = {
   "leaders.kamDesc": "Der hjælper med at udvikle og styrke dine vigtigste kunderelationer",
   "leaders.seniorTitle": "Seniorledere",
   "leaders.seniorDesc": "Med over 10 års erfaring i at lede teams i Tyskland og Storbritannien",
-
-  "team.heading": "Mød vores team",
-  "team.subtitle": "Vi er her for at hjælpe – erfarne, lydhøre og klar til at støtte dine mål.",
-  "team.roleCEO": "CEO",
 
   "contact.heading": "Kontakt os",
   "contact.phoneLabel": "Telefon:",
@@ -227,8 +215,6 @@ const no = {
   "success.incon.name": "Andreas Hammerin (Incon AB)",
   "success.incon.quote": "“Thanks to Erton Services, we found an IT expert who exceeded our expectations.”",
 
-  "ceo.heading": "Møt vår daglige leder",
-  "ceo.videoPlaceholder": "VIDEO",
   "ceo.book": "Bestill en gratis konsultasjon",
   "ceo.orDirect": "Eller kontakt oss direkte:",
   "ceo.cta": "Kontakt oss",
@@ -268,10 +254,6 @@ const no = {
   "leaders.kamDesc": "Som hjelper til med å utvikle og håndtere dine viktigste kundeforhold",
   "leaders.seniorTitle": "Seniorledere",
   "leaders.seniorDesc": "Med over 10 års erfaring i å lede team i Tyskland og Storbritannia",
-
-  "team.heading": "Møt vårt team",
-  "team.subtitle": "Vi er her for å hjelpe deg – erfarne, lyttende og klare til å støtte dine mål.",
-  "team.roleCEO": "CEO",
 
   "contact.heading": "Kontakt oss",
   "contact.phoneLabel": "Telefon:",
@@ -322,8 +304,6 @@ const fi = {
   "success.incon.name": "Andreas Hammerin (Incon AB)",
   "success.incon.quote": "“Erton Services ansiosta löysimme IT-asiantuntijan, joka ylitti odotuksemme.”",
 
-  "ceo.heading": "Tapaa toimitusjohtajamme",
-  "ceo.videoPlaceholder": "VIDEO",
   "ceo.book": "Varaa maksuton konsultaatio",
   "ceo.orDirect": "Tai ota meihin suoraan yhteyttä:",
   "ceo.cta": "Ota yhteyttä",
@@ -363,10 +343,6 @@ const fi = {
   "leaders.kamDesc": "Auttamaan tärkeimpien asiakassuhteidesi kehittämisessä ja hallinnassa",
   "leaders.seniorTitle": "Kokeneita johtajia",
   "leaders.seniorDesc": "Yli 10 vuoden kokemuksella tiimien johtamisesta Saksassa ja Isossa-Britanniassa",
-
-  "team.heading": "Tapaa tiimimme",
-  "team.subtitle": "Olemme täällä auttaaksemme sinua – kokeneita, kuuntelevia ja valmiita tukemaan tavoitteitasi.",
-  "team.roleCEO": "CEO",
 
   "contact.heading": "Ota yhteyttä",
   "contact.phoneLabel": "Puhelin:",
@@ -417,8 +393,6 @@ const sv = {
   "success.incon.name": "Andreas Hammerin (Incon AB)",
   "success.incon.quote": "“Thanks to Erton Services, we found an IT expert who exceeded our expectations.”",
 
-  "ceo.heading": "Möt vår VD",
-  "ceo.videoPlaceholder": "VIDEO",
   "ceo.book": "Boka en kostnadsfri konsultation",
   "ceo.orDirect": "Eller kontakta oss direkt:",
   "ceo.cta": "Kontakta oss",
@@ -458,10 +432,6 @@ const sv = {
   "leaders.kamDesc": "som hjälper till att utveckla och hantera dina viktigaste kundrelationer",
   "leaders.seniorTitle": "Seniora ledare",
   "leaders.seniorDesc": "med över 10 års erfarenhet av att leda team i Tyskland och Storbritannien",
-
-  "team.heading": "Möt vårt team",
-  "team.subtitle": "Vi finns här för att hjälpa dig – erfarna, lyhörda och redo att stötta dina mål.",
-  "team.roleCEO": "CEO",
 
   "contact.heading": "Kontakta oss",
   "contact.phoneLabel": "Telefon:",
