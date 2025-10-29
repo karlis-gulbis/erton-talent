@@ -28,6 +28,19 @@ Inside of your Astro project, you'll see the following folders and files:
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
+## 🔧 Environment Setup
+
+Create a `.env` file in the root directory with the following variables:
+
+```ini
+RESEND_API_KEY="re_xxxxxxxxx"
+```
+
+To get your Resend API key:
+1. Sign up at [Resend](https://resend.com)
+2. Create an API key at [https://resend.com/api-keys](https://resend.com/api-keys)
+3. Verify your domain at [https://resend.com/domains](https://resend.com/domains)
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

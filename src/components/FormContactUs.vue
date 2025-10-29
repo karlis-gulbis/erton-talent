@@ -17,20 +17,25 @@ const handleSubmit = async (e: Event) => {
   isLoading.value = true;
 
   try {
-    const response = await fetch("https://formspree.io/f/xzzvlerq", {
+    const formData = new FormData();
+    formData.append("name", state.name);
+    formData.append("lastName", state.lastName);
+    formData.append("email", state.email);
+    formData.append("message", state.message);
+
+    const response = await fetch("/_actions/sendContactEmail", {
       method: "POST",
-      body: JSON.stringify(state),
-      headers: {
-        "Content-Type": "application/json",
-      },
+      body: formData,
     });
 
-    if (response.ok) {
-      console.log("Message sent successfully");
-      isSuccess.value = true;
-    } else {
-      console.error("Failed to send message");
+    const result = await response.json();
+
+    if (result.error) {
+      console.error("Failed to send message", result.error);
       isError.value = true;
+    } else {
+      console.log("Message sent successfully", result.data);
+      isSuccess.value = true;
     }
   } catch (error) {
     console.error(error);
