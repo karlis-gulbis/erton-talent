@@ -3,7 +3,7 @@ import Logo from '../assets/logo.svg'
 import LanguagePicker from './LanguagePicker.astro'
 ---
 
-<div class="h-15 bg-dark px-4 w-screen">
+<div id="site-header" class="h-15 bg-dark px-4 w-screen sticky top-0 z-50" data-threshold="80" data-window="250" data-reveal-top="100">
   <div class="w-full h-full mx-auto max-w-7xl flex items-center justify-between">
     <Logo class="h-9"/>
     <div class="text-white">
@@ -11,3 +11,86 @@ import LanguagePicker from './LanguagePicker.astro'
     </div>
   </div>
 </div>
+
+<script>
+  (() => {
+    const header = document.getElementById("site-header");
+    if (!header) return;
+
+    const threshold = Number(header.dataset.threshold ?? "60");
+    const timeWindow = Number(header.dataset.window ?? "200");
+    const revealTop = Number(header.dataset.revealTop ?? "100");
+
+    let lastScrollY = window.scrollY;
+    let accumulatedDown = 0;
+    let accumulatedUp = 0;
+    let lastAccumTime = performance.now();
+    let hidden = false;
+
+    const show = () => {
+      if (!hidden) return;
+      hidden = false;
+      header.classList.remove("is-hidden");
+    };
+
+    const hide = () => {
+      if (hidden) return;
+      hidden = true;
+      header.classList.add("is-hidden");
+    };
+
+    const onScroll = () => {
+      const now = performance.now();
+      const currentY = window.scrollY;
+
+      if (currentY <= revealTop) {
+        show();
+        accumulatedUp = 0;
+        accumulatedDown = 0;
+        lastAccumTime = now;
+        lastScrollY = currentY;
+        return;
+      }
+
+      if (now - lastAccumTime > timeWindow) {
+        accumulatedDown = 0;
+        accumulatedUp = 0;
+        lastAccumTime = now;
+      }
+
+      const delta = currentY - lastScrollY;
+
+      if (delta > 0) {
+        accumulatedDown += delta;
+        accumulatedUp = 0;
+        if (!hidden && accumulatedDown >= threshold) {
+          hide();
+          accumulatedDown = 0;
+          lastAccumTime = now;
+        }
+      } else if (delta < 0) {
+        accumulatedUp += -delta;
+        accumulatedDown = 0;
+        if (hidden && (accumulatedUp >= threshold || currentY <= revealTop)) {
+          show();
+          accumulatedUp = 0;
+          lastAccumTime = now;
+        }
+      }
+
+      lastScrollY = currentY;
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+  })();
+</script>
+
+<style>
+  #site-header {
+    transition: transform 300ms ease;
+    will-change: transform;
+  }
+  #site-header.is-hidden {
+    transform: translateY(-100%);
+  }
+</style>
