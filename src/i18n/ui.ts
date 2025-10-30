@@ -3,7 +3,8 @@ export const LOCALES = ["en", "da", "no", "fi", "sv"] as const;
 export type Locale = typeof LOCALES[number];
 
 const en = {
-  "site.title": "Erton Talent",
+  "site.title": "Top-Tier IT Talent from Latvia",
+  "site.description": "We connect Swedish companies with skilled and reliable IT specialists from Latvia — fast, flexible, and without the hassle of traditional hiring.",
 
   "hero.title": "Top-Tier IT Talent from Latvia",
   "hero.subtitle": "Ready to Power Your Projects in Sweden",
@@ -92,7 +93,8 @@ const en = {
 } as const;
 
 const da = {
-  "site.title": "Erton Talent",
+  "site.title": "Erton Talent fra Letland",
+  "site.description": "Vi forbinder svenske virksomheder med dygtige og pålidelige IT-specialister fra Letland – hurtigt, fleksibelt og uden besværet ved traditionel rekruttering.",
 
   "hero.title": "Erton Talent\nfra Letland",
   "hero.subtitle": "Klar til at drive dine projekter i Sverige",
@@ -181,7 +183,8 @@ const da = {
 } as const;
 
 const no = {
-  "site.title": "Erton Talent",
+  "site.title": "Erton Talent fra Letland",
+  "site.description": "Vi kobler svenske selskaper med dyktige og pålitelige IT-spesialister fra Latvia – raskt, fleksibelt og uten bryet med tradisjonell rekruttering.",
 
   "hero.title": "IT-eksperter\nfra Latvia",
   "hero.subtitle": "Klare til å drive dine prosjekter i Sverige",
@@ -270,7 +273,8 @@ const no = {
 } as const;
 
 const fi = {
-  "site.title": "Erton Talent",
+  "site.title": "IT-asiantuntijat Latviasta",
+  "site.description": "Yhdistämme ruotsalaiset yritykset taitaviin ja luotettaviin IT-asiantuntijoihin Latviasta – nopeasti, joustavasti ja ilman perinteisen rekrytoinnin vaivaa.",
 
   "hero.title": "IT-asiantuntijat\nLatviasta",
   "hero.subtitle": "Valmiina toteuttamaan projektisi Ruotsissa",
@@ -359,7 +363,8 @@ const fi = {
 } as const;
 
 const sv = {
-  "site.title": "Erton Talent",
+  "site.title": "IT-experter från Lettland",
+  "site.description": "Vi kopplar samman svenska företag med skickliga och pålitliga IT-specialister från Lettland – snabbt, flexibelt och utan krångel med traditionell rekrytering.",
 
   "hero.title": "IT-experter\nfrån Lettland",
   "hero.subtitle": "Redo att driva dina projekt i Sverige",

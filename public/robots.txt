@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://erton.it/sitemap-index.xml
+
+
