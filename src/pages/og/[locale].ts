@@ -1,6 +1,8 @@
 import { OGImageRoute } from "astro-og-canvas";
 import { ui, DEFAULT_LOCALE, LOCALES, type Locale } from "../../i18n/ui";
 
+export const prerender = true;
+
 const pages = Object.fromEntries(
   (LOCALES as readonly string[]).map((loc) => [loc, { locale: loc }])
 );
